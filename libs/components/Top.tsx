@@ -1,4 +1,5 @@
-import { Box, Stack } from "@mui/material";
+import { Logout } from "@mui/icons-material";
+import { Box, Menu, MenuItem, Stack } from "@mui/material";
 import Link from "next/link";
 
 const Top = () => {
@@ -34,6 +35,14 @@ const Top = () => {
               <div className={"login-user"}>
                 <img src={"/img/profile/defaultUser.svg"} alt="" />
               </div>
+              <Menu id="basic-menu" sx={{ mt: "5px" }} open={false}>
+                <MenuItem>
+                  <Logout
+                    fontSize="small"
+                    style={{ color: "blue", marginRight: "10px" }}
+                  />
+                </MenuItem>
+              </Menu>
             </>
           </Box>
         </Stack>
